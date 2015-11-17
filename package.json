@@ -1,0 +1,17 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-jade": "^1.1.0",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {}
+}
