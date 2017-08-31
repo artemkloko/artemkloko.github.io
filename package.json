@@ -2,8 +2,10 @@
   "name": "curriculum-vitae",
   "version": "1.0.0",
   "description": "",
-  "main": "./node_modules/gulp/bin/gulp.js",
-  "scripts": {},
+  "main": "gulpfile.coffee",
+  "scripts": {
+    "build" : "./node_modules/gulp/bin/gulp.js"
+  },
   "author": "Artem Kloko <artemkloko@gmail.com>",
   "license": "ISC",
   "dependencies": {},
