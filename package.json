@@ -1,17 +1,18 @@
 {
-  "name": "cv",
+  "name": "curriculum-vitae",
   "version": "1.0.0",
   "description": "",
-  "main": "",
+  "main": "./node_modules/gulp/bin/gulp.js",
   "scripts": {},
-  "author": "",
+  "author": "Artem Kloko <artemkloko@gmail.com>",
   "license": "ISC",
-  "dependencies": {
-    "coffee-script": "^1.10.0",
-    "gulp": "^3.9.0",
-    "gulp-connect": "^2.2.0",
-    "gulp-jade": "^1.1.0",
-    "jade": "^1.11.0"
-  },
-  "devDependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.12.7",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^2.3.1",
+    "gulp-minify-inline": "^1.0.0",
+    "gulp-pug": "^3.3.0",
+    "pug": "^2.0.0-rc.3"
+  }
 }
