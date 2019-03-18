@@ -1,20 +1,22 @@
 {
-  "name": "curriculum-vitae",
-  "version": "1.0.0",
+  "name": "artemkloko.github.io",
+  "version": "1.0.1",
   "description": "",
-  "main": "gulpfile.coffee",
+  "main": "gulpfile.esm.js",
   "scripts": {
-    "build" : "./node_modules/gulp/bin/gulp.js"
+    "gulp": "gulp"
   },
-  "author": "Artem Kloko <artemkloko@gmail.com>",
+  "author": "artemkloko <artemkloko@gmail.com>",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "coffee-script": "^1.12.7",
-    "gulp": "^3.9.1",
-    "gulp-connect": "^2.3.1",
-    "gulp-minify-inline": "^1.0.0",
-    "gulp-pug": "^3.3.0",
-    "pug": "^2.0.0-rc.3"
+    "bootstrap": "^3.3.7",
+    "esm": "^3.2.16",
+    "font-awesome": "^4.7.0",
+    "gulp": "^4.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-minify-inline": "^1.1.0",
+    "gulp-pug": "^4.0.1",
+    "merge-stream": "^1.0.1"
   }
 }
