@@ -1,7 +1,8 @@
 import gulp from 'gulp'
-import pug from 'gulp-pug'
 import connect from 'gulp-connect'
 import minifyInline from 'gulp-minify-inline'
+import pug from 'gulp-pug'
+import rename from 'gulp-rename'
 import merge from 'merge-stream'
 
 const buildPug = () => gulp.src('src/index.pug')
@@ -14,10 +15,11 @@ const addBootstrap = () => gulp.src('node_modules/bootstrap/dist/css/bootstrap.m
     .pipe(gulp.dest('public/static/css'))
 
 const addFontAwesome = () => merge(
-    gulp.src('node_modules/font-awesome/css/font-awesome.min.css')
+    gulp.src('node_modules/@fortawesome/fontawesome-free/css/all.min.css')
+        .pipe(rename('fontawesome.min.css'))
         .pipe(gulp.dest('public/static/css')),
-    gulp.src('node_modules/font-awesome/fonts/*')
-        .pipe(gulp.dest('public/static/fonts'))
+    gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+        .pipe(gulp.dest('public/static/webfonts'))
 )
 
 const addStatic = () => gulp.src('static/**/*')
