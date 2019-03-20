@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- 'lts/*'
+- '10'
+branches:
+  only:
+    - dev
+cache:
+  directories:
+    - node_modules
+before_install:
+  - npm install
+script:
+  - npm run gulp build
+deploy:
+  provider: pages
+  local-dir: ./public
+  target-branch: master
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: dev
