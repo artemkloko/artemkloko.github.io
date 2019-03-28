@@ -48,32 +48,39 @@ body
                         td.col-xs-5.col-sm-5
                             h1.text-shadow.name Artem Titkov
                             h4.text-shadow Web developer
+                            span.hidden-print
+                                a(href="mailto:artemkloko@gmail.com" target="blank")
+                                    i.fas.fa-fw.fa-envelope &nbsp;
+                                a(href="https://github.com/artemkloko" target="blank")
+                                    i.fab.fa-fw.fa-github-alt &nbsp;
+                                a(href="https://hub.docker.com/u/artemkloko" target="blank")
+                                    i.fab.fa-fw.fa-docker &nbsp;
+                                a(href="https://stackoverflow.com/users/4968678/artemkloko" target="blank")
+                                    i.fab.fa-fw.fa-stack-overflow &nbsp;
+                                a(href="https://medium.com/@artemkloko" target="blank")
+                                    i.fab.fa-fw.fa-medium &nbsp;
+                                a(href="https://www.linkedin.com/in/artemkloko/" target="blank")
+                                    i.fab.fa-fw.fa-linkedin &nbsp;
+                                a(href="https://www.facebook.com/artemkloko" target="blank")
+                                    i.fab.fa-fw.fa-facebook &nbsp;
                         td.col-xs-4.col-sm-3
                             ul.list-unstyled.text-right(style="margin-bottom: 0;")
-                                li
+                                li.visible-print-block
                                     small Berlin, Germany &nbsp;
                                         i.fas.fa-fw.fa-map-marker
-                                li
+                                li.visible-print-block
                                     small 0049 15 256 067890 &nbsp;
                                         i.fas.fa-fw.fa-phone
-                                li
+                                li.visible-print-block
                                     small
                                         a(href="mailto:artemkloko@gmail.com") artemkloko@gmail.com &nbsp;
                                         i.fas.fa-fw.fa-envelope
-                                li
-                                    small
-                                        a(href="https://github.com/artemkloko" target="blank") artemkloko &nbsp;
-                                        i.fab.fa-fw.fa-github-alt
-                                li
-                                    small
-                                        a(href="https://hub.docker.com/u/artemkloko" target="blank") artemkloko &nbsp;
-                                        i.fab.fa-fw.fa-docker
                         td.hidden-xs.col-sm-1
         .row
             .hidden-xs.col-sm-1
             .col-xs-12.col-sm-10
                 h6.hidden-print &nbsp;
-                ul.list-inline
+                ul.list-inline.visible-print-block
                     li
                         strong Date of birth
                         |&nbsp; 21 April 1986
@@ -229,10 +236,7 @@ body
                 h6 &nbsp;
                 ul.list-inline
                     li
-                        a.btn.btn-success(href="https://github.com/artemkloko" target="blank") Visit my GitHub account
-                        h6 &nbsp;
-                    li
-                        a.btn.btn-info(href="mailto:artemkloko@gmail.com") Contact me via email
+                        a.btn.btn-success(href="mailto:artemkloko@gmail.com") Contact me via email
                         h6 &nbsp;
                     li
                         a.btn.btn-warning(href="javascript:window.print();") Print my curriculum vitae
