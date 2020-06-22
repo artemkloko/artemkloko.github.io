@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.2",
+    "@fortawesome/fontawesome-free": "^5.13.1",
     "bootstrap": "^3.4.1",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
