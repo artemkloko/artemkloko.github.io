@@ -28,6 +28,7 @@ const addStatic = () => gulp.src('static/**/*')
 const watchPug = () => gulp.watch('src/index.pug', buildPug)
 
 const livereload = () => connect.server({
+    port: 3000,
     root: 'public',
     livereload: true
 })
