@@ -33,6 +33,9 @@ head
         .img-responsive {
             width: 100%;
         }
+        .avoid-page-break-inside {
+            page-break-inside: avoid;
+        }
 body
     h6.hidden-print &nbsp;
     .container(style="background-color: white;")
@@ -41,13 +44,13 @@ body
                 tbody
                     tr
                         td.hidden-xs.col-sm-1
-                        td.col-xs-3.col-sm-2.col-md-2.col-lg-2
+                        td.col-xs-2.col-sm-2
                             h6 &nbsp;
                             img.img-responsive.img-circle.img-thumbnail(src="static/img/Artem Titkov.jpg" alt="Artem Titkov" title="Artem Titkov")
                             h6 &nbsp;
                         td.col-xs-5.col-sm-5
                             h1.text-shadow.name Artem Titkov
-                            h4.text-shadow Full Stack Contractor
+                            h5.text-shadow Front End Architect / Full Stack Contractor
                             span.hidden-print
                                 a(href="mailto:artemkloko@gmail.com" target="blank")
                                     i.fas.fa-fw.fa-envelope &nbsp;
@@ -61,9 +64,7 @@ body
                                     i.fab.fa-fw.fa-medium &nbsp;
                                 a(href="https://www.linkedin.com/in/artemkloko/" target="blank")
                                     i.fab.fa-fw.fa-linkedin &nbsp;
-                                a(href="https://www.facebook.com/artemkloko" target="blank")
-                                    i.fab.fa-fw.fa-facebook &nbsp;
-                        td.col-xs-4.col-sm-3
+                        td.col-xs-3.col-sm-3
                             ul.list-unstyled.text-right(style="margin-bottom: 0;")
                                 li.visible-print-block
                                     small Berlin, Germany &nbsp;
@@ -88,7 +89,7 @@ body
                     li
                         strong Languages
                         |&nbsp; English, Greek, Russian
-                p Front-end functional developer with a good understanding and interest in the back-end systems. I value honest humane communication, working environments with good culture and open-minded people, teamwork in flat organizational structures, transparency in cooperation, responsibility and cats.
+                p Front-end functional developer with full-stack capabilities and solid understanding of cloud technologies. I value honest humane communication, working environments with good culture and open-minded people, teamwork in flat organizational structures, transparency in cooperation, responsibility, and cats :3
             .hidden-xs.col-sm-1
         hr
         .row
@@ -96,10 +97,44 @@ body
             .col-xs-12.col-sm-10
                 h3 Work experience
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
-                h5 December 2020 - Current
+                h5 January 2023 -
+                    br
+                    |October 2023
+                div 10 months
+            .col-xs-9.col-sm-8
+                h4.text-info Full Stack Contractor
+                ul.list-inline
+                    li
+                        strong SAP SE
+                    li |
+                    li
+                        a(href="https://www.sap.com/" target="blank") https://www.sap.com/
+                    li |
+                    li
+                        a(href="https://www.kulturpass.de/" target="blank") https://www.kulturpass.de/
+                    li |
+                    li Berlin, Germany
+                ul
+                    li Front end - React Native, Fastlane, App Core Design, Functional Components, Typescript
+                    li Government-commissioned app for post-COVID relief, used by millions of 18-year-olds across Germany
+                    li Initial bare setup to production deployment in 6 months, delivered fully to specifications
+                    li Cross team alignment and architecture
+                ul.list-inline
+                    li
+                        strong Business sector
+                        |&nbsp; E-commerce mobile apps
+                hr
+            .hidden-xs.col-sm-1
+        .row.avoid-page-break-inside
+            .hidden-xs.col-sm-1
+            .col-xs-3.col-sm-2.text-right
+                h5 December 2020 - 
+                    br 
+                    |November 2022
+                div 2 years
             .col-xs-9.col-sm-8
                 h4.text-info Full Stack Contractor
                 ul.list-inline
@@ -121,10 +156,12 @@ body
                         |&nbsp; Fintech mobile apps
                 hr
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
-                h5 January 2020 - August 2020
+                h5 January 2020 - 
+                    br 
+                    |August 2020
                 div 8 months
             .col-xs-9.col-sm-8
                 h4.text-info Full Stack Contractor
@@ -146,38 +183,12 @@ body
                         |&nbsp; Social mobile apps
                 hr
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
-                h5 July 2019 - January 2020
-                div 7 months
-            .col-xs-9.col-sm-8
-                h4.text-info Full Stack Contractor
-                ul.list-inline
-                    li
-                        strong Spoty Labs
-                    li |
-                    li
-                        a(href="https://spoty.link/" target="blank") https://spoty.link/
-                    li |
-                    li Paris, France
-                ul
-                    li Front end - React, React Native, Apollo Client, Functional Components, Hooks, Typescript, EsNext
-                    li Cloud back end - AWS Amplify, AppSync GraphQL, Cognito, DynamoDb, Lambda
-                    li Tooling - Docker, Bash
-                    li Data architecting
-                    li User data processing, segmentation and retargeting 
-                    li Basic dev-ops infrastructure
-                ul.list-inline
-                    li
-                        strong Business sector
-                        |&nbsp; Maps &amp; Navigation / Ad-tech / Mobile apps
-                hr
-            .hidden-xs.col-sm-1
-        .row
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
-                h5 August 2017 - May 2019
+                h5 August 2017 - 
+                    br 
+                    |May 2019   
                 div 1 year 10 months
             .col-xs-9.col-sm-8
                 h4.text-info Tracking Team Lead
@@ -193,7 +204,7 @@ body
                     li Front end - React, Redux, EsNext, Communication with REST APIs
                     li Tooling - Docker, NodeJs, Bash
                     li Maintenance and further development of the adminitrative/reporting webapp
-                    li Implementation of ElasticSeach/Logstash/Kibana stack for data reporting and analysis
+                    li Implementation of ElasticSeach / Logstash / Kibana stack for data reporting and analysis
                     li Guiding, developing and shipping cross team features
                     li Features research, solutions proposals and impact evaluation
                     li People engagement, guiding and career development
@@ -203,10 +214,12 @@ body
                         |&nbsp; Real time bidding / Customer data science
                 hr
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
-                h5 February 2015 - July 2017
+                h5 February 2015 - 
+                    br 
+                    |July 2017
                 p 2 years 6 months
             .col-xs-9.col-sm-8
                 h4.text-info Senior Web Developer
@@ -229,10 +242,12 @@ body
                         |&nbsp; Real time bidding / Ad-tech
                 hr
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
-                h5 October 2007 - June 2013
+                h5 October 2007 - 
+                    br 
+                    |June 2013
                 p 5 years 9 months
             .col-xs-9.col-sm-8
                 h4.text-info Web Developer
@@ -263,61 +278,93 @@ body
             .col-xs-12.col-sm-10
                 h3 Professional skills
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
                 strong Currently I work with
             .col-xs-9.col-sm-8
                 ul.list-inline
                     li React
-                    li React Native
+                    li · 
+                    li Bare React Native
+                    li · 
+                    li Expo
+                    li · 
                     li Typescript
+                    li · 
                     li Node.js
+                    li · 
+                    li REST APIs
+                    li · 
                     li GraphQL
+                    li · 
                     li NoSQL
+                    li · 
                     li SQL
+                    li · 
                     li Docker
+                    li · 
                     li Unix systems
-                    li AWS (Amplify, AppSync, Cognito, DynamoDb, Lambda, ElasticSearch)
+                    li · 
+                    li AWS Amplify / AppSync / Cognito / DynamoDb / Lambda / ElasticSearch
                 hr
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
+            .hidden-xs.col-sm-1
+            .col-xs-3.col-sm-2.text-right
+                strong Front end specialization
+            .col-xs-9.col-sm-8
+                ul.list-inline
+                    li General project architecture
+                    li · 
+                    li API client design and implementation
+                    li · 
+                    li API cache layer
+                    li · 
+                    li UI component library
+                    li · 
+                    li Navigation
+                    li · 
+                    li Internationalization
+                    li · 
+                    li Store modeling / thunks / side-effects / persistance
+                hr
+            .hidden-xs.col-sm-1
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
                 strong Things I like using
             .col-xs-9.col-sm-8
                 ul.list-inline
-                    li REST APIs
                     li Asynchronous execution
+                    li · 
                     li Observables and event emitters
+                    li · 
                     li Data streams and event streams
+                    li · 
                     li Functional programming
+                    li · 
                     li Data processing
-                    li ElasticSearch/Logstash/Kibana
+                    li · 
                     li Microservices
+                    li · 
                     li Continuous integration
-                    li End-to-End/integration/logic tests
+                    li · 
+                    li End-to-End / integration / logic tests
+                    li · 
                     li Debuggers
+                    li · 
                     li ECMAScript.Next
+                    li · 
                     li Contemporary web features
+                    li · 
                     li Experimental UIs
                 hr
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
-                strong Domains of knowledge
-            .col-xs-9.col-sm-8
-                ul.list-unstyled
-                    li Web tech - front end, back end, full stack, containerization, integrations
-                    li Ad Tech - user tracking, browser support, ad formats, real time bidding data flow
-                    li ECMAScript 3 - JavaScript that works on outdated browsers back to Internet Explorer 8, Firefox 3, Chrome 5, Opera 11, Safari 4
-                hr
-            .hidden-xs.col-sm-1
-        .row
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
-                strong Organisational / managerial
+                strong Organisational and managerial
             .col-xs-9.col-sm-8
                 ul.list-unstyled
                     li Strong analytical, problem solving and self education skills
@@ -327,13 +374,13 @@ body
                     li Good communication skills with clients, co-workers and user base
                 hr
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-3.col-sm-2.text-right
                 strong Helping others grow
             .col-xs-9.col-sm-8
                 ul.list-unstyled
-                    li Three success stories with mentoring university/bootcamp graduates landing a Junior Dev job
+                    li Four success stories with mentoring university / bootcamp graduates landing a Junior Dev job
             .hidden-xs.col-sm-1
         hr
         .row
@@ -341,50 +388,34 @@ body
             .col-xs-12.col-sm-10
                 h3 What I am looking for
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-12.col-sm-10
                 h4.text-info Position
-            .hidden-xs.col-sm-1
-        .row
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
                 p I am looking for a Senior or Lead position. I love coding and driving the full development cycle of any feature forward, i.e. gathering requirements, setting up cross-team communication channels, writing proposals, scoping, estimating, planning, grooming, shipping and measuring the impact of each deployment, no matter if the feature is front end, back end, or full stack. I am also interested in leading and helping team memebers evolve, as I strongly believe that effective work and innovation can only be achieved by a team of engaged, diverse and responsible people. Nevertheless I would not like to become a full time manager, as I still want to code at least 50% of my time.
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-12.col-sm-10
                 h4.text-info Location
-            .hidden-xs.col-sm-1
-        .row
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
                 p Currently I am open mostly for remote positions. I am based in Berlin, Germany, but I travel quite often for family and professional reasons. Of course I am open to on-site onboarding, meetings, events, etc.
             .hidden-xs.col-sm-1
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-12.col-sm-10
                 h4.text-info Employment type
-            .hidden-xs.col-sm-1
-        .row
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
                 p I am open for both short term and long term freelance work and would uptake anything between 2 to 5 days per week.
-                p Regarding full time employment, I am looking for companies that understand the importance of open source and contribute back. And I would offer my knowledge and my soul to a fully open source project. I would even stop freelancing for it. 
+                p Regarding full time employment, I am looking for companies that understand the importance of open source and contribute back.
             .hidden-xs.col-sm-1
         hr
-        .row
+        .row.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-12.col-sm-10
                 h3 Work samples
-            .hidden-xs.col-sm-1
-        .row
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
                 p Please visit my GitHub account if you want to checkout some of my fun side projects or open source contributions. Unfortunately a lot of the hard work I have done is not open source and belongs to private companies, but upon the needs of collaboration, I can outline the technology stack and procedures that I used in the past.
             .hidden-xs.col-sm-1
         hr
-        .row.hidden-print.text-center
+        .row.hidden-print.text-center.avoid-page-break-inside
             .hidden-xs.col-sm-1
             .col-xs-12.col-sm-10
                 h6 &nbsp;
