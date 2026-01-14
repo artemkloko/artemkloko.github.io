@@ -40,6 +40,11 @@ head
             list-style: none;
             padding-inline-start: 0px;
         }
+        @media (max-width: 992px) {
+            .container {
+                width: auto;
+            }
+        }
 body
     h6.hidden-print &nbsp;
     .container(style="background-color: white;")
@@ -47,12 +52,12 @@ body
             table
                 tbody
                     tr
-                        td.hidden-xs.col-sm-1
-                        td.col-xs-2.col-sm-2
-                            h6 &nbsp;
+                        td.hidden-xs.hidden-sm.col-md-1
+                        td.col-xs-2.col-md-2
+                            h6.hidden-print &nbsp;
                             img.img-responsive.img-circle.img-thumbnail(src="static/img/Artem Titkov.jpg" alt="Artem Titkov" title="Artem Titkov")
                             h6 &nbsp;
-                        td.col-xs-5.col-sm-5
+                        td.col-xs-5.col-md-5
                             h1.text-shadow.name Artem Titkov
                             h5.text-shadow Front End / Full Stack Engineer
                             span.hidden-print
@@ -66,7 +71,7 @@ body
                                     i.fab.fa-fw.fa-stack-overflow &nbsp;
                                 a(href="https://www.linkedin.com/in/artemkloko/" target="blank")
                                     i.fab.fa-fw.fa-linkedin &nbsp;
-                        td.col-xs-3.col-sm-3
+                        td.col-xs-3.col-md-3
                             ul.list-unstyled.text-right(style="margin-bottom: 0;")
                                 li.visible-print-block
                                     small Berlin, Germany &nbsp;
@@ -78,10 +83,10 @@ body
                                     small
                                         a(href="mailto:artemkloko@gmail.com") artemkloko@gmail.com &nbsp;
                                         i.fas.fa-fw.fa-envelope
-                        td.hidden-xs.col-sm-1
+                        td.hidden-xs.hidden-sm.col-md-1
         .row
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h6.hidden-print &nbsp;
                 ul.list-inline.visible-print-block
                     li
@@ -92,21 +97,48 @@ body
                         strong Languages
                         |&nbsp; English, Greek, Russian
                 p Full stack engineer with front end specialization and solid understanding of cloud technologies. I value honest humane communication, working environments with good culture and open-minded people, teamwork in flat organizational structures, transparency in cooperation, responsibility, and nature, and motorcycles, and cats :3
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         hr
         .row
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h3 Work experience
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
+                h5 September 2025 -
+                    br
+                    |March 2026
+                div 5 months
+            .col-xs-9.col-md-8
+                h4.text-info Lead Software Engineer
+                ul.list-inline
+                    li
+                        strong Wikimedia Foundation
+                    li |
+                    li
+                        a(href="https://wikimediafoundation.org/" target="blank") https://wikimediafoundation.org/
+                    li |
+                    li New York, United States
+                ul
+                    li Frontend - Vue, Tailwind, Motion, Typescript, Vanilla Javascript
+                    li Backend - PHP, Mediawiki, Wikibase
+                    li Multilingual, interactive storytelling experience to celebrate 25 years of Wikipedia, combining rich media animations with a dynamic user journey
+                    li Mediawiki extension that renders context-sensitive, animated characters on articles, featuring a robust filtering and configuration system for the community
+                ul.list-no-decoration
+                    li Business sector - Non-profit / Education
+                    li Employment type - Freelance / Remote
+                hr
+            .hidden-xs.col-md-1
+        .row.avoid-page-break-inside
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
                 h5 February 2025 -
                     br
                     |April 2025
                 div 2.5 months
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 h4.text-info Lead Software Engineer
                 ul.list-inline
                     li
@@ -125,15 +157,15 @@ body
                     li Business sector - Non-profit / Education
                     li Employment type - Freelance / Remote
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
                 h5 January 2023 -
                     br
                     |October 2023
                 div 10 months
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 h4.text-info Front End Engineer
                 ul.list-inline
                     li
@@ -158,15 +190,15 @@ body
                     li Business sector - E-commerce mobile apps
                     li Employment type - Freelance / Remote
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
-                h5 December 2020 - 
-                    br 
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
+                h5 December 2020 -
+                    br
                     |November 2022
                 div 2 years
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 h4.text-info Full Stack Engineer
                 ul.list-inline
                     li
@@ -186,15 +218,15 @@ body
                     li Business sector - Fintech mobile apps
                     li Employment type - Freelance / Remote / Hybrid
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
-                h5 January 2020 - 
-                    br 
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
+                h5 January 2020 -
+                    br
                     |August 2020
                 div 8 months
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 h4.text-info Full Stack Engineer
                 ul.list-inline
                     li
@@ -212,15 +244,15 @@ body
                     li Business sector - Social mobile apps
                     li Employment type - Freelance / Remote
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
-                h5 August 2017 - 
-                    br 
-                    |May 2019   
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
+                h5 August 2017 -
+                    br
+                    |May 2019
                 div 1 year 10 months
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 h4.text-info Tracking Team Lead
                 ul.list-inline
                     li
@@ -242,15 +274,15 @@ body
                     li Business sector - Real time bidding / Customer data science
                     li Employment type - Permanent / In-office
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
-                h5 February 2015 - 
-                    br 
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
+                h5 February 2015 -
+                    br
                     |July 2017
                 p 2 years 6 months
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 h4.text-info Senior Web Developer
                 ul.list-inline
                     li
@@ -269,15 +301,15 @@ body
                     li Business sector - Real time bidding / Ad-tech
                     li Employment type - Permanent / In-office
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
-                h5 October 2007 - 
-                    br 
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
+                h5 October 2007 -
+                    br
                     |June 2013
                 p 5 years 9 months
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 h4.text-info Web Developer
                 ul.list-inline
                     li
@@ -298,113 +330,113 @@ body
                 ul.list-no-decoration
                     li Business sector - Web development / Online branding
                     li Employment type - Permanent / In-office
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         hr
         .row
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h3 Professional skills
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
                 strong Currently I work with
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 ul.list-inline
                     li React
-                    li · 
+                    li ·
                     li React Native
-                    li · 
+                    li ·
                     li Expo
-                    li · 
+                    li ·
                     li Vue.js
-                    li · 
+                    li ·
                     li Next.js
-                    li · 
+                    li ·
                     li Typescript
-                    li · 
+                    li ·
                     li Node.js
-                    li · 
+                    li ·
                     li Python
-                    li · 
+                    li ·
                     li REST APIs
-                    li · 
+                    li ·
                     li GraphQL
-                    li · 
+                    li ·
                     li NoSQL
-                    li · 
+                    li ·
                     li SQL
-                    li · 
+                    li ·
                     li Docker
-                    li · 
+                    li ·
                     li GitLab CI / CD
-                    li · 
+                    li ·
                     li GitHub Actions
-                    li · 
+                    li ·
                     li Unix systems
-                    li · 
+                    li ·
                     li AWS Amplify / AppSync / Cognito / DynamoDb / Lambda / ElasticSearch
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
                 strong Frontend specialization
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 ul.list-inline
                     li Project architecture
-                    li · 
+                    li ·
                     li API client design and implementation
-                    li · 
+                    li ·
                     li API cache layer
-                    li · 
+                    li ·
                     li UI component library
-                    li · 
+                    li ·
                     li Navigation
-                    li · 
+                    li ·
                     li Internationalization
-                    li · 
+                    li ·
                     li Store modeling / thunks / side-effects / persistence
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
                 strong Things I like using
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 ul.list-inline
                     li Asynchronous execution
-                    li · 
+                    li ·
                     li Observables and event emitters
-                    li · 
+                    li ·
                     li Data streams and event streams
-                    li · 
+                    li ·
                     li Functional programming
-                    li · 
+                    li ·
                     li Websockets
-                    li · 
+                    li ·
                     li Data processing
-                    li · 
+                    li ·
                     li Microservices
-                    li · 
+                    li ·
                     li Continuous integration
-                    li · 
+                    li ·
                     li End-to-End / integration / logic tests
-                    li · 
+                    li ·
                     li Debuggers
-                    li · 
+                    li ·
                     li ECMAScript.Next
-                    li · 
+                    li ·
                     li Contemporary web features
-                    li · 
+                    li ·
                     li Experimental UIs
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
                 strong Organisational and managerial
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 ul.list-unstyled
                     li Strong analytical, problem solving and self education skills
                     li Self-directed, with a positive can-do attitude
@@ -412,50 +444,50 @@ body
                     li Interested in knowledge sharing in team and across organization
                     li Good communication skills with clients, co-workers and user base
                 hr
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-3.col-sm-2.text-right
+            .hidden-xs.col-md-1
+            .col-xs-3.col-md-2.text-right
                 strong Helping others grow
-            .col-xs-9.col-sm-8
+            .col-xs-9.col-md-8
                 ul.list-unstyled
                     li Four success stories with mentoring university / bootcamp graduates landing a Junior Dev job
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         hr
         .row
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h3 What I am looking for
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h4.text-info Position
-                p I am looking for a Senior or Lead position. I love coding and driving the full development cycle of any feature forward, i.e. gathering requirements, setting up cross-team communication channels, writing proposals, scoping, estimating, planning, grooming, shipping and measuring the impact of each deployment, no matter if the feature is frontend, backend, or full-stack. I am also interested in leading and helping team members evolve, as I strongly believe that effective work and innovation can only be achieved by a team of engaged, diverse and responsible people. Nevertheless I would not like to become a full time manager, as I still want to code at least 50% of my time.
-            .hidden-xs.col-sm-1
+                p I am looking for a Senior or Lead position. I love coding and driving the full development cycle of any feature forward, i.e. gathering requirements, setting up cross-team communication channels, writing proposals, scoping, estimating, planning, grooming, shipping and measuring the impact of each deployment, no matter if the feature is frontend, backend, or full-stack. I am also interested in leading and helping team members evolve, as I strongly believe that effective work and innovation can only be achieved by a team of engaged, diverse and responsible people.
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h4.text-info Location
                 p I am open to remote, hybrid, and on-site positions. I am based in Berlin, Germany, but sometimes I need to travel for family or professional reasons.
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h4.text-info Employment type
                 p I am open to full-time permanent employment, as well as short-term and long-term freelance or contractor projects.
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         hr
         .row.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h3 Work samples
                 p Please visit my GitHub account if you want to check out some of my personal projects and open source contributions. Unfortunately a lot of the hard work I have done in the past is not open source and belongs to private companies, but upon the needs of collaboration, I can outline the technology stack and procedures that I used in the past.
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         hr
         .row.hidden-print.text-center.avoid-page-break-inside
-            .hidden-xs.col-sm-1
-            .col-xs-12.col-sm-10
+            .hidden-xs.col-md-1
+            .col-xs-12.col-md-10
                 h6 &nbsp;
                 ul.list-inline
                     li
@@ -467,7 +499,7 @@ body
                     li
                         a.btn.btn-warning(href="javascript:window.print();") Print my curriculum vitae
                         h6 &nbsp;
-            .hidden-xs.col-sm-1
+            .hidden-xs.col-md-1
         .row.bg-primary.hidden-print
             .col-xs-12 &nbsp;
     h6.hidden-print &nbsp;
