@@ -2,13 +2,14 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { resumeData } from '../src/data/resume.en';
+import { updateSitemap } from './utils';
 
 // Get current directory
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Target file
-const outputFile = path.resolve(__dirname, '../public/llms.txt');
+const outputFile = path.resolve(__dirname, '../dist/llms.txt');
 
 function generateMarkdown(): string {
   const { profile, summary, experience, skills, preferences } = resumeData;
@@ -40,6 +41,8 @@ ${job.details.slice(2).map(d => `- ${d}`).join('\n')}
 - **Phone:** ${profile.contacts.phone}
 - **Links:**
   - website: https://artemkloko.github.io
+  - [English Resume (PDF)](https://artemkloko.github.io/resume-en.pdf)
+  - [German Resume (PDF)](https://artemkloko.github.io/resume-de.pdf)
 ${links}
 
 ## Summary
@@ -65,6 +68,17 @@ try {
   const content = generateMarkdown();
   fs.writeFileSync(outputFile, content, 'utf-8');
   console.log(`✅ Successfully generated llms.txt at ${outputFile}`);
+
+
+
+  // Update Sitemap
+  updateSitemap(path.resolve(__dirname, '../dist'), [
+    {
+      loc: 'https://artemkloko.github.io/llms.txt',
+      changefreq: 'weekly',
+      priority: 0.5
+    }
+  ]);
 } catch (error) {
   console.error('❌ Error generating llms.txt:', error);
   process.exit(1);

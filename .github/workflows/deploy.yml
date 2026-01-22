@@ -51,7 +51,7 @@ jobs:
           git config --global user.email "artemkloko@gmail.com"
           git config --global user.name "Artem Titkov"
           git clone https://x-access-token:${{ env.PROFILE_TOKEN }}@github.com/artemkloko/artemkloko.git profile-repo
-          cp public/llms.txt profile-repo/README.md
+          cp dist/llms.txt profile-repo/README.md
           cd profile-repo
           git add README.md
           if git diff --staged --quiet; then

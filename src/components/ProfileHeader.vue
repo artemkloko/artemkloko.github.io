@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-  <header class="bg-blue-600 text-white section-padding print:pb-0 print:text-gray-900">
+  <header class="not-print:bg-blue-600 text-white section-padding print:pb-0 print:text-gray-900">
     <div class="flex flex-col md:flex-row print:flex-row items-center gap-6 md:gap-10">
         <!-- Left: Image -->
         <div class="shrink-0">
