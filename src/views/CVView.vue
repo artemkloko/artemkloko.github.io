@@ -10,6 +10,7 @@ import SkillGroup from '../components/SkillGroup.vue';
 import PreferenceBlock from '../components/PreferenceBlock.vue';
 import ActionFooter from '../components/ActionFooter.vue';
 import { useResumeData } from '../data';
+import { generatePersonSchema } from '../utils/schemaGenerator';
 
 const { resumeData } = useResumeData();
 const { locale } = useI18n();
@@ -44,6 +45,12 @@ useHead({
     { rel: 'alternate', hreflang: 'en', href: `${siteUrl}/en` },
     { rel: 'alternate', hreflang: 'de', href: `${siteUrl}/de` },
     { rel: 'alternate', hreflang: 'x-default', href: `${siteUrl}/en` }
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: computed(() => JSON.stringify(generatePersonSchema(resumeData.value, siteUrl)))
+    }
   ]
 });
 </script>
