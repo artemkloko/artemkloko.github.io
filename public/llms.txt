@@ -1,8 +1,8 @@
-# Artem Titkov - Front End / Full Stack Engineer
+# Artem Titkov - Lead Software Engineer
 
 ## Profile
 
-- **Title:** Front End / Full Stack Engineer
+- **Title:** Lead Software Engineer
 - **Location:** Berlin, Germany
 - **Email:** artemkloko@gmail.com
 - **Phone:** +49 15 256 067890
@@ -16,7 +16,7 @@
 
 ## Summary
 
-Full stack engineer with front end specialization and solid understanding of cloud technologies. I value honest humane communication, working environments with good culture and open-minded people, teamwork in flat organizational structures, transparency in cooperation, responsibility, and nature, and motorcycles, and cats :3
+Lead Software Engineer with front end specialization and focus on product engineering. I value honest humane communication, working environments with good culture and open-minded people, teamwork in flat organizational structures, transparency in cooperation, responsibility, and nature, and motorcycles, and cats :3
 Citizenship: European. Languages: English, Greek, Russian.
 
 ## Work Experience
@@ -93,7 +93,7 @@ Citizenship: European. Languages: English, Greek, Russian.
 
 ## Preferences
 
-**Position:** I am looking for a Senior or Lead position. I love coding and driving the full development cycle of any feature forward, i.e. gathering requirements, setting up cross-team communication channels, writing proposals, scoping, estimating, planning, grooming, shipping and measuring the impact of each deployment, no matter if the feature is frontend, backend, or full-stack. I am also interested in leading and helping team members evolve, as I strongly believe that effective work and innovation can only be achieved by a team of engaged, diverse and responsible people.
+**Position:** I am seeking a Lead or Staff Software Engineer position. I specialize in Product Engineering and System Architecture, taking ownership of the entire development lifecycle. My focus includes translating complex requirements into scalable technical designs, establishing engineering best practices, and optimizing Developer Experience. I am committed to technical leadership that fosters code quality, mentorship, and high-velocity delivery in cross-functional teams.
 
 **Location:** I am open to remote, hybrid, and on-site positions. I am based in Berlin, Germany, but sometimes I need to travel for family or professional reasons.
 

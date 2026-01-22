@@ -6,7 +6,7 @@ export * from './types';
 export const resumeData: ResumeData = {
   profile: {
     name: "Artem Titkov",
-    title: "Front End / Full Stack Engineer",
+    title: "Lead Software Engineer",
     image: commonData.profile.image,
     contacts: {
       email: commonData.profile.email,
@@ -18,7 +18,7 @@ export const resumeData: ResumeData = {
   summary: {
     citizenship: "European",
     languages: "English, Greek, Russian",
-    bio: "Full stack engineer with front end specialization and solid understanding of cloud technologies. I value honest humane communication, working environments with good culture and open-minded people, teamwork in flat organizational structures, transparency in cooperation, responsibility, and nature, and motorcycles, and cats :3"
+    bio: "Lead Software Engineer with front end specialization and focus on product engineering. I value honest humane communication, working environments with good culture and open-minded people, teamwork in flat organizational structures, transparency in cooperation, responsibility, and nature, and motorcycles, and cats :3"
   },
   experience: [
     {
@@ -286,7 +286,7 @@ export const resumeData: ResumeData = {
     items: [
         {
             title: "Position",
-            content: "I am looking for a Senior or Lead position. I love coding and driving the full development cycle of any feature forward, i.e. gathering requirements, setting up cross-team communication channels, writing proposals, scoping, estimating, planning, grooming, shipping and measuring the impact of each deployment, no matter if the feature is frontend, backend, or full-stack. I am also interested in leading and helping team members evolve, as I strongly believe that effective work and innovation can only be achieved by a team of engaged, diverse and responsible people."
+            content: "I am seeking a Lead or Staff Software Engineer position. I specialize in Product Engineering and System Architecture, taking ownership of the entire development lifecycle. My focus includes translating complex requirements into scalable technical designs, establishing engineering best practices, and optimizing Developer Experience. I am committed to technical leadership that fosters code quality, mentorship, and high-velocity delivery in cross-functional teams."
         },
         {
             title: "Location",

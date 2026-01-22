@@ -6,7 +6,7 @@ export * from './types';
 export const resumeData: ResumeData = {
   profile: {
     name: "Artem Titkov",
-    title: "Front End / Full Stack Entwickler",
+    title: "Lead Software Engineer",
     image: commonData.profile.image,
     contacts: {
       email: commonData.profile.email,
@@ -18,7 +18,7 @@ export const resumeData: ResumeData = {
   summary: {
     citizenship: "EU-Bürger",
     languages: "Englisch, Griechisch, Russisch",
-    bio: "Full-Stack-Entwickler mit Spezialisierung auf Frontend und fundiertem Verständnis von Cloud-Technologien. Ich schätze ehrliche, menschliche Kommunikation, Arbeitsumgebungen mit guter Kultur und aufgeschlossenen Menschen, Teamarbeit in flachen Hierarchien, Transparenz in der Zusammenarbeit, Verantwortung sowie die Natur, Motorräder und Katzen :3"
+    bio: "Lead Software Engineer mit Spezialisierung auf Frontend und Fokus auf Product Engineering. Ich schätze ehrliche, menschliche Kommunikation, Arbeitsumgebungen mit guter Kultur und aufgeschlossenen Menschen, Teamarbeit in flachen Hierarchien, Transparenz in der Zusammenarbeit, Verantwortung sowie die Natur, Motorräder und Katzen :3"
   },
   experience: [
     {
@@ -286,7 +286,7 @@ export const resumeData: ResumeData = {
     items: [
         {
             title: "Position",
-            content: "Ich suche eine Senior- oder Lead-Position. Ich liebe es zu programmieren und den vollen Entwicklungszyklus eines Features voranzutreiben, d.h. Anforderungsanalyse, Einrichtung teamübergreifender Kommunikationskanäle, Erstellung von Vorschlägen, Scoping, Schätzung, Planung, Grooming, Auslieferung und Messung der Auswirkungen jedes Deployments, egal ob es sich um ein Frontend-, Backend- oder Full-Stack-Feature handelt. Ich bin auch daran interessiert, Teammitglieder zu führen und ihnen bei der Weiterentwicklung zu helfen, da ich fest daran glaube, dass effektive Arbeit und Innovation nur durch ein Team von engagierten, diversen und verantwortungsbewussten Menschen erreicht werden kann."
+            content: "Ich suche eine Position als Lead oder Staff Software Engineer. Ich spezialisiere mich auf Product Engineering und Systemarchitektur und übernehme die Verantwortung für den gesamten Entwicklungszyklus. Mein Fokus liegt auf der Übersetzung komplexer Anforderungen in skalierbare technische Designs, der Etablierung von Engineering Best Practices und der Optimierung der Developer Experience. Ich setze auf technische Führung, Code-Qualität, Mentoring und High-Velocity-Delivery in cross-funktionalen Teams."
         },
         {
             title: "Standort",
