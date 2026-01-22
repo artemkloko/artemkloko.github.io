@@ -6,7 +6,7 @@ export const resumeData: ResumeData = {
   profile: {
     name: "Artem Titkov",
     title: "Front End / Full Stack Entwickler",
-    image: "/profile.jpg",
+    image: "/profile.webp",
     contacts: {
       email: "artemkloko@gmail.com",
       phone: "+49 15 256 067890",
