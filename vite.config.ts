@@ -18,4 +18,20 @@ export default defineConfig({
       readable: true
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('vue') || id.includes('@unhead')) {
+              return 'vendor-vue';
+            }
+            if (id.includes('fortawesome')) {
+              return 'vendor-icons';
+            }
+          }
+        }
+      }
+    }
+  }
 })
