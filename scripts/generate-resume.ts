@@ -1,20 +1,23 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { resumeData } from '../data/resume.en';
+import { resumeData } from '../src/data/resume.en';
 
 // Get current directory
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Target file
-const outputFile = path.resolve(__dirname, '../../public/llms.txt');
+const outputFile = path.resolve(__dirname, '../public/llms.txt');
 
 function generateMarkdown(): string {
   const { profile, summary, experience, skills, preferences } = resumeData;
+  // ... (content generation remains the same)
 
   const experienceSections = experience.map(job => {
-    return `### ${job.role} @ ${job.company.name} (${job.period.start} - ${job.period.end})
+    // Format "present" if end is missing
+    const endDate = job.period.end || 'Present';
+    return `### ${job.role} @ ${job.company.name} (${job.period.start} - ${endDate})
 *${job.meta.employmentType} | ${job.company.location}*
 - Overview: ${job.details.slice(0, 2).join(', ')}
 ${job.details.slice(2).map(d => `- ${d}`).join('\n')}
@@ -36,7 +39,7 @@ ${job.details.slice(2).map(d => `- ${d}`).join('\n')}
 - **Email:** ${profile.contacts.email}
 - **Phone:** ${profile.contacts.phone}
 - **Links:**
-  - Website: https://artemkloko.github.io
+  - website: https://artemkloko.github.io
 ${links}
 
 ## Summary

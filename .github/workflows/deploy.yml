@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,6 +44,22 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
+
+      - name: Update Profile README
+        if: env.PROFILE_TOKEN != ''
+        run: |
+          git config --global user.email "artemkloko@gmail.com"
+          git config --global user.name "Artem Titkov"
+          git clone https://x-access-token:${{ env.PROFILE_TOKEN }}@github.com/artemkloko/artemkloko.git profile-repo
+          cp public/llms.txt profile-repo/README.md
+          cd profile-repo
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update profile README from artemkloko.github.io"
+            git push origin main
+          fi
 
   deploy:
     environment:

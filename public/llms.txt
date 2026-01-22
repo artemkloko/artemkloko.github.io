@@ -7,7 +7,7 @@
 - **Email:** artemkloko@gmail.com
 - **Phone:** +49 15 256 067890
 - **Links:**
-  - Website: https://artemkloko.github.io
+  - website: https://artemkloko.github.io
   - email: mailto:artemkloko@gmail.com
   - github: https://github.com/artemkloko
   - docker: https://hub.docker.com/u/artemkloko

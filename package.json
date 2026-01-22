@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "pnpm run generate:llms && vue-tsc -b && vite build",
-    "generate:llms": "tsx src/scripts/generate-llms.ts",
+    "build": "pnpm run generate:resume && vue-tsc -b && vite build",
+    "generate:resume": "tsx scripts/generate-resume.ts",
     "preview": "vite preview"
   },
   "dependencies": {

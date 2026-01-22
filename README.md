@@ -1,5 +1,31 @@
-# Vue 3 + TypeScript + Vite
+# Artem Titkov - Resume Website
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+My personal resume and portfolio website, hosted at [https://artemkloko.github.io](https://artemkloko.github.io).
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Tech Stack
+
+- **Framework**: Vue 3 + TypeScript
+- **Build**: Vite + Rolldown
+- **Styling**: Tailwind CSS
+- **Icons**: FontAwesome (Tree-shaken)
+- **I18n**: Vue I18n
+
+## Development
+
+```bash
+# Install dependencies
+pnpm install
+
+# Run development server
+pnpm run dev
+
+# Build for production
+pnpm run build
+```
+
+## Features
+
+- **Responsive & Printable**: Optimized layout for web and PDF export.
+- **Multilingual**: English (`/en`) and German (`/de`) support.
+- **AI-Ready**: Generates `public/llms.txt` for AI agents.
+- **Profile Sync**: Automatically syncs resume content to my GitHub Profile README via CI.
