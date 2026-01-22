@@ -14,8 +14,7 @@ export function generatePersonSchema(data: ResumeData, siteUrl: string) {
   const alumniOf: any[] = [];
 
   const now = new Date();
-  const currentYear = now.getFullYear();
-  const currentMonth = now.getMonth(); // 0-indexed
+
 
   experience.forEach(job => {
     const org = {
@@ -31,30 +30,13 @@ export function generatePersonSchema(data: ResumeData, siteUrl: string) {
     let isCurrent = false;
     const end = job.period.end;
 
-    if (end.toLowerCase() === 'present') {
+    if (!end) {
       isCurrent = true;
     } else {
-      // Try parsing "Month YYYY"
-      const parts = end.split(' ');
-      if (parts.length === 2 && parts[1] && parts[0]) {
-        const year = parseInt(parts[1], 10);
-
-        if (!isNaN(year)) {
-             // Simple mapping for month name to index if needed, but year check is usually enough for quick heuristics
-            // If year is greater than current year, it's definitely current/future
-            if (year > currentYear) {
-                isCurrent = true;
-            } else if (year === currentYear) {
-                // If same year, check month
-                const monthName = parts[0].toLowerCase();
-                const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
-                const monthIndex = months.findIndex(m => m === monthName);
-                if (monthIndex >= currentMonth) {
-                    isCurrent = true;
-                }
-            }
+        const endDate = new Date(end);
+        if (endDate >= now) {
+            isCurrent = true;
         }
-      }
     }
 
     if (isCurrent) {

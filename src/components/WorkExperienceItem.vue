@@ -1,12 +1,46 @@
 <script setup lang="ts">
-import { type PropType } from 'vue';
+import { type PropType, computed } from 'vue';
+import { useI18n } from 'vue-i18n';
+import { format, intervalToDuration, formatDuration, addMonths } from 'date-fns';
+import { enUS, de } from 'date-fns/locale';
 import type { Experience } from '../data';
 
-defineProps({
+const props = defineProps({
   experience: {
     type: Object as PropType<Experience>,
     required: true
   }
+});
+
+const { locale } = useI18n();
+
+const dateLocale = computed(() => locale.value === 'de' ? de : enUS);
+
+const formattedStart = computed(() => {
+  if (!props.experience.period.start) return '';
+  return format(new Date(props.experience.period.start), 'MMMM yyyy', { locale: dateLocale.value });
+});
+
+const formattedEnd = computed(() => {
+  if (!props.experience.period.end) return locale.value === 'de' ? 'Aktuell' : 'Present';
+  return format(new Date(props.experience.period.end), 'MMMM yyyy', { locale: dateLocale.value });
+});
+
+const formattedDuration = computed(() => {
+  const start = new Date(props.experience.period.start);
+  let end = props.experience.period.end ? new Date(props.experience.period.end) : new Date();
+
+  // Make end month inclusive if explicit date provided
+  if (props.experience.period.end) {
+    end = addMonths(end, 1);
+  }
+
+  const duration = intervalToDuration({ start, end });
+
+  return formatDuration(duration, {
+    format: ['years', 'months'],
+    locale: dateLocale.value
+  }) || (locale.value === 'de' ? 'weniger als ein Monat' : 'less than a month');
 });
 </script>
 
@@ -14,10 +48,10 @@ defineProps({
   <div class="grid grid-cols-1 md:grid-cols-12 gap-6 py-6 border-b border-gray-100 last:border-0 break-inside-avoid">
     <!-- Left: Dates -->
     <div class="md:col-span-3 text-left md:text-right text-gray-600">
-        <div class="font-bold text-gray-800 inline md:block">{{ experience.period.start }}</div>
+        <div class="font-bold text-gray-800 inline md:block capitalize">{{ formattedStart }}</div>
         <div class="font-bold text-gray-800 inline md:hidden"> - </div>
-        <div class="font-bold text-gray-800 inline md:block">{{ experience.period.end }}</div>
-        <div class="text-xs uppercase tracking-wide mt-1 text-gray-500">{{ experience.period.duration }}</div>
+        <div class="font-bold text-gray-800 inline md:block capitalize">{{ formattedEnd }}</div>
+        <div class="text-xs uppercase tracking-wide mt-1 text-gray-500">{{ formattedDuration }}</div>
     </div>
 
     <!-- Right: Content -->

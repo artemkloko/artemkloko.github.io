@@ -21,19 +21,19 @@ Citizenship: European. Languages: English, Greek, Russian.
 
 ## Work Experience
 
-### Lead Software Engineer @ Wikimedia Foundation (September 2025 - March 2026)
+### Lead Software Engineer @ Wikimedia Foundation (2025-09 - 2026-03)
 *Freelance / Remote | New York, United States*
 - Overview: Frontend - Vue, Tailwind, Motion, Typescript, Vanilla Javascript, Backend - PHP, Mediawiki, Wikibase
 - Multilingual, interactive storytelling experience to celebrate 25 years of Wikipedia, combining rich media animations with a dynamic user journey
 - Mediawiki extension that renders context-sensitive, animated characters on articles, featuring a robust filtering and configuration system for the community
 
-### Lead Software Engineer @ Wikimedia Foundation (February 2025 - April 2025)
+### Lead Software Engineer @ Wikimedia Foundation (2025-02 - 2025-04)
 *Freelance / Remote | New York, United States*
 - Overview: Frontend - Vue, Pinia, Tailwind, Motion, Typescript, Backend - Fastify, Prisma, Zod
 - Mobile oriented web app in form of an educational text game
 - Initial setup to production deployment in 2.5 months, delivered fully to specifications
 
-### Front End Engineer @ SAP SE (January 2023 - October 2023)
+### Front End Engineer @ SAP SE (2023-01 - 2023-10)
 *Freelance / Remote | Berlin, Germany*
 - Overview: Frontend - React Native, Fastlane, App Core Design, Functional Components, Typescript, Government-commissioned app for post-COVID relief, used by millions of 18-year-olds across Germany
 - Initial setup to production deployment in 6 months, delivered fully to specifications
@@ -42,19 +42,19 @@ Citizenship: European. Languages: English, Greek, Russian.
 - Comprehensive web accessibility across the entire application, ensuring full compliance with WCAG standards
 - Cross team alignment and architecture
 
-### Full Stack Engineer @ Klarna Bank AB (December 2020 - November 2022)
+### Full Stack Engineer @ Klarna Bank AB (2020-12 - 2022-11)
 *Freelance / Remote / Hybrid | Berlin, Germany*
 - Overview: Frontend - React Native, Functional Components, Hooks, Typescript, EsNext, Cloud backend - NodeJS services on AWS
 - Technical design, breakdown and leading the development of multiple features
 - Developed and maintained feature-oriented Backend for Frontend (BFF) solutions
 - Cross team alignment and architecture, both as consumers and as providers of frontend functional services
 
-### Full Stack Engineer @ Get Together Software UG (January 2020 - August 2020)
+### Full Stack Engineer @ Get Together Software UG (2020-01 - 2020-08)
 *Freelance / Remote | Berlin, Germany*
 - Overview: Frontend - React Native, Apollo Client, Functional Components, Hooks, Typescript, EsNext, Cloud backend - AWS Amplify, AppSync GraphQL, Cognito, DynamoDb, Lambda, ElasticSearch
 - Data architecture
 
-### Tracking Team Lead @ Dunnhumby Germany GmbH (August 2017 - May 2019)
+### Tracking Team Lead @ Dunnhumby Germany GmbH (2017-08 - 2019-05)
 *Permanent / In-office | Berlin, Germany*
 - Overview: Frontend - React, Redux, EsNext, Communication with REST APIs, Tooling - Docker, NodeJs, Bash
 - Maintenance and further development of the administrative/reporting web app
@@ -63,13 +63,13 @@ Citizenship: European. Languages: English, Greek, Russian.
 - Features research, solutions proposals and impact evaluation
 - People engagement, guiding and career development
 
-### Senior Web Developer @ Sociomantic Labs GmbH (February 2015 - July 2017)
+### Senior Web Developer @ Sociomantic Labs GmbH (2015-02 - 2017-07)
 *Permanent / In-office | Berlin, Germany*
 - Overview: Frontend - Vanilla Javascript, Advanced Cookies, ECMAScript 3, Tooling - Docker, Python, NodeJs, Selenium WebDriver, Vanilla Javascript, Bash
 - Maintenance and further development of the user tracking framework
 - Development of an e2e testing tool for the previously mentioned framework
 
-### Web Developer @ Radial (October 2007 - June 2013)
+### Web Developer @ Radial (2007-10 - 2013-06)
 *Permanent / In-office | Athens, Greece*
 - Overview: Frontend - HTML, CSS, Javascript, jQuery, Backend - PHP, Propel ORM, Wordpress, Python, Django
 - Debugging and refactoring legacy projects

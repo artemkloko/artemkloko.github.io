@@ -25,8 +25,7 @@ export interface Summary {
 export interface Experience {
   period: {
     start: string;
-    end: string;
-    duration: string;
+    end?: string | null;
   };
   role: string;
   company: {

@@ -1,4 +1,5 @@
 import type { ResumeData } from './types';
+import { commonData } from './common';
 
 export * from './types';
 
@@ -6,38 +7,12 @@ export const resumeData: ResumeData = {
   profile: {
     name: "Artem Titkov",
     title: "Front End / Full Stack Engineer",
-    image: "/profile.webp",
+    image: commonData.profile.image,
     contacts: {
-      email: "artemkloko@gmail.com",
-      phone: "+49 15 256 067890",
+      email: commonData.profile.email,
+      phone: commonData.profile.phone,
       location: "Berlin, Germany",
-      socials: [
-        {
-            network: "email",
-            url: "mailto:artemkloko@gmail.com",
-            icon: "fas fa-envelope"
-        },
-        {
-          network: "github",
-          url: "https://github.com/artemkloko",
-          icon: "fab fa-github-alt"
-        },
-        {
-          network: "docker",
-          url: "https://hub.docker.com/u/artemkloko",
-          icon: "fab fa-docker"
-        },
-        {
-          network: "stackoverflow",
-          url: "https://stackoverflow.com/users/4968678/artemkloko",
-          icon: "fab fa-stack-overflow"
-        },
-        {
-          network: "linkedin",
-          url: "https://www.linkedin.com/in/artemkloko/",
-          icon: "fab fa-linkedin"
-        }
-      ]
+      socials: commonData.profile.socials
     }
   },
   summary: {
@@ -48,9 +23,8 @@ export const resumeData: ResumeData = {
   experience: [
     {
       period: {
-        start: "September 2025",
-        end: "March 2026",
-        duration: "5 months"
+        start: "2025-09",
+        end: "2026-03"
       },
       role: "Lead Software Engineer",
       company: {
@@ -71,9 +45,8 @@ export const resumeData: ResumeData = {
     },
     {
       period: {
-        start: "February 2025",
-        end: "April 2025",
-        duration: "2.5 months"
+        start: "2025-02",
+        end: "2025-04"
       },
       role: "Lead Software Engineer",
       company: {
@@ -94,9 +67,8 @@ export const resumeData: ResumeData = {
     },
     {
       period: {
-        start: "January 2023",
-        end: "October 2023",
-        duration: "10 months"
+        start: "2023-01",
+        end: "2023-10"
       },
       role: "Front End Engineer",
       company: {
@@ -120,9 +92,8 @@ export const resumeData: ResumeData = {
     },
     {
       period: {
-        start: "December 2020",
-        end: "November 2022",
-        duration: "2 years"
+        start: "2020-12",
+        end: "2022-11"
       },
       role: "Full Stack Engineer",
       company: {
@@ -144,9 +115,8 @@ export const resumeData: ResumeData = {
     },
     {
       period: {
-        start: "January 2020",
-        end: "August 2020",
-        duration: "8 months"
+        start: "2020-01",
+        end: "2020-08"
       },
       role: "Full Stack Engineer",
       company: {
@@ -166,9 +136,8 @@ export const resumeData: ResumeData = {
     },
     {
       period: {
-        start: "August 2017",
-        end: "May 2019",
-        duration: "1 year 10 months"
+        start: "2017-08",
+        end: "2019-05"
       },
       role: "Tracking Team Lead",
       company: {
@@ -192,9 +161,8 @@ export const resumeData: ResumeData = {
     },
     {
         period: {
-          start: "February 2015",
-          end: "July 2017",
-          duration: "2 years 6 months"
+          start: "2015-02",
+          end: "2017-07"
         },
         role: "Senior Web Developer",
         company: {
@@ -215,9 +183,8 @@ export const resumeData: ResumeData = {
       },
       {
         period: {
-          start: "October 2007",
-          end: "June 2013",
-          duration: "5 years 9 months"
+          start: "2007-10",
+          end: "2013-06"
         },
         role: "Web Developer",
         company: {
@@ -335,8 +302,5 @@ export const resumeData: ResumeData = {
         }
     ]
   },
-  footer: {
-      meetingUrl: "https://calendly.com/artemkloko/meeting",
-      email: "artemkloko@gmail.com"
-  }
+  footer: commonData.footer
 };
