@@ -11,7 +11,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="bg-blue-600 text-white p-6 md:p-8">
+  <header class="bg-blue-600 text-white p-6 md:p-8">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
         <!-- Left: Image -->
         <div class="md:col-span-2 flex justify-center md:justify-start">
@@ -24,7 +24,7 @@ defineProps({
             <h2 class="text-lg md:text-xl font-light mt-1 opacity-90 drop-shadow-sm">{{ profile.title }}</h2>
             <div class="mt-4 flex gap-4 justify-center md:justify-start">
                 <a v-for="social in profile.contacts.socials" :key="social.network" :href="social.url" target="_blank" class="text-white hover:text-blue-200 transition-colors" :aria-label="social.network">
-                    <font-awesome-icon :icon="social.icon" size="lg" />
+                    <font-awesome-icon :icon="social.icon" size="lg" aria-hidden="true" />
                 </a>
             </div>
         </div>
@@ -45,5 +45,5 @@ defineProps({
              </a>
         </div>
     </div>
-  </div>
+  </header>
 </template>

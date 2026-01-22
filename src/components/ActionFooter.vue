@@ -15,7 +15,7 @@ const handlePrint = () => {
 </script>
 
 <template>
-  <div class="print:hidden py-10 px-6 bg-gray-50 border-t border-gray-200 mt-auto">
+  <footer class="print:hidden py-10 px-6 bg-gray-50 border-t border-gray-200 mt-auto">
     <div class="flex flex-col md:flex-row justify-center items-center gap-4">
         <a :href="footer.meetingUrl" target="_blank" class="w-full md:w-auto text-center px-6 py-3 bg-blue-600 text-white font-bold rounded shadow hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 focus:outline-none transform hover:-translate-y-0.5 transition-all">
             <font-awesome-icon icon="calendar-check" class="mr-2" aria-hidden="true" />
@@ -30,5 +30,5 @@ const handlePrint = () => {
             {{ $t('footer.print') }}
         </button>
     </div>
-  </div>
+  </footer>
 </template>
