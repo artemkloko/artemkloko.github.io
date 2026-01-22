@@ -21,12 +21,11 @@ defineProps({
     <div class="md:col-span-9">
         <div v-if="skillGroup.layoutType === 'inline'" class="leading-relaxed text-gray-700">
             <template v-for="(item, idx) in skillGroup.items" :key="idx">
-                <span class="inline-block font-medium">{{ item }}</span>
-                <span v-if="idx < skillGroup.items.length - 1" class="mx-2 text-gray-300">·</span>
+                <span class="inline-block font-medium last:after:hidden after:content-['|'] after:mx-2 after:text-gray-300">{{ item }}</span>
             </template>
         </div>
-        <ul v-else class="space-y-1 text-gray-700 list-none">
-            <li v-for="(item, idx) in skillGroup.items" :key="idx" class="relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-gray-400">
+        <ul v-else class="list-disc list-outside ml-5 space-y-1 text-gray-700">
+            <li v-for="(item, idx) in skillGroup.items" :key="idx">
                 {{ item }}
             </li>
         </ul>

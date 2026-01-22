@@ -11,7 +11,7 @@ import LanguageSwitcher from './LanguageSwitcher.vue';
 
     <LanguageSwitcher />
 
-    <main id="main-content" class="mx-auto max-w-5xl bg-white shadow-[0_0_33px_0_rgba(0,0,0,0.5)] min-h-screen flex flex-col">
+    <main id="main-content" class="mx-auto max-w-6xl bg-white shadow-[0_0_33px_0_rgba(0,0,0,0.5)] min-h-screen flex flex-col print:shadow-none print:max-w-full print:m-0">
       <slot></slot>
     </main>
   </div>
@@ -21,11 +21,6 @@ import LanguageSwitcher from './LanguageSwitcher.vue';
 @media print {
   body {
     background: none !important;
-  }
-  div {
-    box-shadow: none !important;
-    max-width: 100% !important;
-    margin: 0 !important;
   }
 }
 </style>

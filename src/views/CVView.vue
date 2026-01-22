@@ -62,7 +62,7 @@ useHead({
     <PersonalSummary :summary="resumeData.summary" />
 
     <!-- Experience Section -->
-    <section id="experience" class="px-6 py-6 border-b border-gray-200" aria-labelledby="experience-heading">
+    <section id="experience" class="section-padding border-b border-gray-200" aria-labelledby="experience-heading">
       <h2 id="experience-heading" class="text-2xl font-black text-gray-800 uppercase tracking-wider mb-6 pb-2 border-b-2 border-blue-600 inline-block">
         <font-awesome-icon icon="briefcase" class="mr-3 text-blue-500" />
         {{ $t('section.experience') }}
@@ -77,7 +77,7 @@ useHead({
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="px-6 py-6 border-b border-gray-200 break-inside-avoid" aria-labelledby="skills-heading">
+    <section id="skills" class="section-padding border-b border-gray-200 break-inside-avoid" aria-labelledby="skills-heading">
        <h2 id="skills-heading" class="text-2xl font-black text-gray-800 uppercase tracking-wider mb-6 pb-2 border-b-2 border-blue-600 inline-block">
         <font-awesome-icon icon="code" class="mr-3 text-blue-500" />
         {{ $t('section.skills') }}
@@ -92,7 +92,7 @@ useHead({
     </section>
 
      <!-- Preferences Section -->
-    <section id="preferences" class="px-6 py-6 break-inside-avoid" aria-labelledby="preferences-heading">
+    <section id="preferences" class="section-padding break-inside-avoid" aria-labelledby="preferences-heading">
        <h2 id="preferences-heading" class="text-2xl font-black text-gray-800 uppercase tracking-wider mb-6 pb-2 border-b-2 border-blue-600 inline-block">
         <font-awesome-icon icon="heart" class="mr-3 text-blue-500" />
         {{ $t('section.lookingFor') }}
