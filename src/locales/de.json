@@ -1,0 +1,16 @@
+{
+  "section": {
+    "experience": "Berufserfahrung",
+    "skills": "Fähigkeiten & Kenntnisse",
+    "lookingFor": "Wonach ich suche"
+  },
+  "summary": {
+    "citizenship": "Staatsbürgerschaft",
+    "languages": "Sprachen"
+  },
+  "footer": {
+    "schedule": "Termin vereinbaren",
+    "email": "Per E-Mail kontaktieren",
+    "print": "Lebenslauf drucken"
+  }
+}

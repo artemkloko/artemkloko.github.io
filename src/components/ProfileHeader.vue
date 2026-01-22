@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { type PropType } from 'vue';
-import type { Profile } from '../data/resume';
+import type { Profile } from '../data';
 
 defineProps({
   profile: {
@@ -31,20 +31,17 @@ defineProps({
 
         <!-- Right: Contact -->
         <div class="md:col-span-4 flex flex-col items-center md:items-end space-y-2 text-sm mt-4 md:mt-0">
-             <div class="flex items-center">
-                <span class="md:hidden mr-2">{{ profile.contacts.location }}</span>
-                <font-awesome-icon icon="location-dot" class="w-4 text-center hidden md:inline-block mr-2" />
-                <span class="hidden md:inline">{{ profile.contacts.location }}</span>
+             <div class="flex items-center text-white/90">
+                <font-awesome-icon icon="location-dot" class="w-4 text-center mr-2" aria-hidden="true" />
+                <span>{{ profile.contacts.location }}</span>
              </div>
-             <a :href="`tel:${profile.contacts.phone}`" class="flex items-center hover:underline">
-                <span class="md:hidden mr-2">{{ profile.contacts.phone }}</span>
-                <font-awesome-icon icon="phone" class="w-4 text-center hidden md:inline-block mr-2" />
-                <span class="hidden md:inline">{{ profile.contacts.phone }}</span>
+             <a :href="`tel:${profile.contacts.phone}`" class="flex items-center hover:text-blue-100 hover:underline transition-colors">
+                <font-awesome-icon icon="phone" class="w-4 text-center mr-2" aria-hidden="true" />
+                <span>{{ profile.contacts.phone }}</span>
              </a>
-             <a :href="`mailto:${profile.contacts.email}`" class="flex items-center hover:underline">
-                 <span class="md:hidden mr-2">{{ profile.contacts.email }}</span>
-                <font-awesome-icon icon="envelope" class="w-4 text-center hidden md:inline-block mr-2" />
-                <span class="hidden md:inline">{{ profile.contacts.email }}</span>
+             <a :href="`mailto:${profile.contacts.email}`" class="flex items-center hover:text-blue-100 hover:underline transition-colors">
+                <font-awesome-icon icon="envelope" class="w-4 text-center mr-2" aria-hidden="true" />
+                <span>{{ profile.contacts.email }}</span>
              </a>
         </div>
     </div>

@@ -1,0 +1,16 @@
+{
+  "section": {
+    "experience": "Work Experience",
+    "skills": "Skills",
+    "lookingFor": "What I am looking for"
+  },
+  "summary": {
+    "citizenship": "Citizenship",
+    "languages": "Languages"
+  },
+  "footer": {
+    "schedule": "Schedule a meeting",
+    "email": "Contact me via email",
+    "print": "Print this CV"
+  }
+}

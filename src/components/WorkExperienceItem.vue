@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { type PropType } from 'vue';
-import type { Experience } from '../data/resume';
+import type { Experience } from '../data';
 
 defineProps({
   experience: {
@@ -16,7 +16,7 @@ defineProps({
     <div class="md:col-span-3 text-left md:text-right text-gray-600">
         <div class="font-bold text-gray-800">{{ experience.period.start }} -</div>
         <div class="font-bold text-gray-800">{{ experience.period.end }}</div>
-        <div class="text-xs uppercase tracking-wide mt-1 text-gray-400">{{ experience.period.duration }}</div>
+        <div class="text-xs uppercase tracking-wide mt-1 text-gray-500">{{ experience.period.duration }}</div>
     </div>
 
     <!-- Right: Content -->

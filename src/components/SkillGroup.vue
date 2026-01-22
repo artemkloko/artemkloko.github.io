@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { type PropType } from 'vue';
-import type { SkillCategory } from '../data/resume';
+import type { SkillCategory } from '../data';
 
 defineProps({
   skillGroup: {
@@ -13,8 +13,8 @@ defineProps({
 <template>
   <div class="grid grid-cols-1 md:grid-cols-12 gap-2 md:gap-6 py-3 border-b border-dashed border-gray-200 last:border-0 break-inside-avoid">
     <!-- Left: Title -->
-    <div class="md:col-span-3 text-left md:text-right font-bold text-gray-800">
-        {{ skillGroup.category }}
+    <div class="md:col-span-3 text-left md:text-right">
+        <h3 class="font-bold text-gray-800 text-base">{{ skillGroup.category }}</h3>
     </div>
 
     <!-- Right: Skills -->

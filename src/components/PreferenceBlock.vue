@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { type PropType } from 'vue';
-import type { PreferenceItem } from '../data/resume';
+import type { PreferenceItem } from '../data';
 
 defineProps({
   preference: {

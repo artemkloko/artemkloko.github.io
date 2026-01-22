@@ -1,5 +1,10 @@
+<script setup lang="ts">
+import LanguageSwitcher from './LanguageSwitcher.vue';
+</script>
+
 <template>
   <div class="min-h-screen bg-gray-100 bg-[url('/background.jpg')] bg-cover bg-center font-sans antialiased">
+    <LanguageSwitcher />
     <div class="mx-auto max-w-5xl bg-white shadow-[0_0_33px_0_rgba(0,0,0,0.5)] min-h-screen flex flex-col">
       <slot></slot>
     </div>
