@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build && pnpm run generate",
-    "generate": "pnpm run generate:llms && pnpm run generate:pdfs",
+    "generate": "pnpm run generate:llms && pnpm run generate:pdfs && pnpm run generate:json",
     "generate:llms": "tsx scripts/generate-llms.ts",
     "generate:pdfs": "tsx scripts/generate-pdfs.ts",
+    "generate:json": "tsx scripts/generate-json.ts",
     "preview": "vite preview"
   },
   "dependencies": {
