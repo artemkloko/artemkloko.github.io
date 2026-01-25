@@ -29,8 +29,8 @@ async function generate() {
   const page = await browser.newPage();
 
   const targets = [
-    { path: '/en', file: 'resume-en.pdf' },
-    { path: '/de', file: 'resume-de.pdf' }
+    { path: '/en', file: 'Artem Titkov - Lead Software Engineer (EN).pdf' },
+    { path: '/de', file: 'Artem Titkov - Lead Software Engineer (DE).pdf' }
   ];
 
   for (const t of targets) {

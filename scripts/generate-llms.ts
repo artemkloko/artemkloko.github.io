@@ -41,8 +41,8 @@ ${job.details.slice(2).map(d => `- ${d}`).join('\n')}
 - **Phone:** ${profile.contacts.phone}
 - **Links:**
   - website: https://artemkloko.github.io
-  - [English Resume (PDF)](https://artemkloko.github.io/resume-en.pdf)
-  - [German Resume (PDF)](https://artemkloko.github.io/resume-de.pdf)
+  - [English Resume (PDF)](https://artemkloko.github.io/Artem%20Titkov%20-%20Lead%20Software%20Engineer%20(EN).pdf)
+  - [German Resume (PDF)](https://artemkloko.github.io/Artem%20Titkov%20-%20Lead%20Software%20Engineer%20(DE).pdf)
 ${links}
 
 ## Summary
